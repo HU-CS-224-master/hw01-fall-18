@@ -1,0 +1,6 @@
+# Autosave files
+*~
+# LaTeX compilation files*
+*.aux
+*.log
+.pdf

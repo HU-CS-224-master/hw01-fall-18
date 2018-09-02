@@ -1,0 +1,7 @@
+﻿Category,Item,Marks
+Correctness,Task 1 was completed,1
+Correctness,Task 2 was completed,1
+Correctness,The code does not compile (compiles with errors),-10
+Style,The code followed the best practices guideline for both tasks,6
+Style,The code compiles with no errors,1
+Documentation,The code was properly commented,1

@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{exam}
+
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{soul}
+\usepackage{textcomp}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  upquote=true,
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=2
+}
+
+% \qformat{{\large\bf \thequestiontitle}\hfill[\totalpoints\ points]}
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+% \boxedpoints
+% \printanswers
+
+\newcommand{\func}[1]{\\{\tt \ul{function}: #1}}
+
+\title{CS 224 Object Oriented Programming and Design Methodologies}
+\author{Assignment 01}
+\date{Out: 31 August, Due: 10 September}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{questions}
+
+\titledquestion{Remember your Calculus}
+See the code given in the accompanying file, \path{Assignment01_SampleCode.cpp}. Once you run the code, you can see that a file	\path{linegraph.txt} is generated. You should now try to understand the code on your own and test it to see what happens when you make changes to it. Once understood, you are to produce a file, namely \path{graph.txt} which will contain a sine graph. For reference, kindly see \path{graph.txt} as given in the assignment folder.
+\func{graph\_maker}
+
+\titledquestion{You Gotta Keep 'em Separated}
+Suppose you are given a valid mathematical expression in a character array, e.g
+\begin{lstlisting}{language=C++}
+  char exp[] = "24*356+489*5/45*54";
+\end{lstlisting}
+Write a function that takes an array like above as argument, separates the integer operands and the operators in integer and character arrays respectively, and prints the arrays. For example, the output for the above case will be:
+\begin{lstlisting}{language=bash}
+  operands: 24 356 489 5 45 54
+  operators: * + * / *
+\end{lstlisting}
+You can define the integer and character arrays to be of length 64. The code should work for any valid expression satisfying the length. You do not need to calculate the expression but you can choose to do it as a challenge for yourself.
+\func{separate}\\
+\tt{\ul{random time waste}: code with \href{https://www.youtube.com/watch?v=yvEp3OjoEGo}{this soundtrack} for best results.}
+\end{questions}
+\end{document}
